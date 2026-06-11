@@ -115,10 +115,7 @@ If you use this code, please cite:
 
 ```bibtex
 @article{cgf2026,
-  title={Confidence-Guided Fallback Strategy: Real-Time Pupil Detection Combining Traditional Binarization and Deep Segmentation},
-  author={Author A and Author B},
-  journal={Applied Sciences},
-  year={2026}
+  title={Confidence-Guided Fallback Strategy: Real-Time Pupil Detection Combining Traditional Binarization and Deep Segmentation}
 }
 ```
 
