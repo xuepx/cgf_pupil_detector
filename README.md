@@ -4,7 +4,7 @@
 
 **CGF** is a real-time pupil detection framework that fuses traditional binarization with deep segmentation through a geometric confidence scoring mechanism. It achieves near deep-learning accuracy at significantly higher throughput by invoking the deep model *only when needed*.
 
-![CGF Demo](demo.gif)
+![CGF Demo](demo.mp4)
 
 > Green overlays = traditional detection (high confidence).  
 > Red overlays = RITNet fallback triggered by low confidence.  
@@ -62,18 +62,18 @@ print(f"Method: {result['method']}")       # "traditional" or "RITNet"
 print(f"Confidence: {result['confidence']:.3f}")
 ```
 
-### Generate Demo GIF
+### Generate Demo MP4
 
 ```bash
 # Using LPW dataset path
 python demo.py --lpw-dir /path/to/LPW --participant 1 --vid-id 1 \
     --weights best_model_finetune_v2_ep122_miou9524.pkl \
-    --threshold 0.7 --frames 150 --output demo.gif
+    --threshold 0.7 --frames 150 --output demo.mp4
 
 # Using direct video path
 python demo.py --video /path/to/LPW/1/1.avi \
     --weights best_model_finetune_v2_ep122_miou9524.pkl \
-    --threshold 0.7 --frames 150 --output demo.gif
+    --threshold 0.7 --frames 150 --output demo.mp4
 ```
 
 ### Threshold Modes
@@ -94,7 +94,7 @@ python demo.py --video /path/to/LPW/1/1.avi \
 ├── pupil_geometry.py    # Ellipse fitting & geometric priors
 ├── metrics.py           # Evaluation metrics (IoU, center error)
 ├── config.py            # Configuration parameters
-├── demo.py              # Demo script: generate visualization GIF
+├── demo.py              # Demo script: generate visualization MP4
 ├── requirements.txt     # Python dependencies
 └── README.md
 ```
