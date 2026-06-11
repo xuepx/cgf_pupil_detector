@@ -4,9 +4,7 @@
 
 **CGF** is a real-time pupil detection framework that fuses traditional binarization with deep segmentation through a geometric confidence scoring mechanism. It achieves near deep-learning accuracy at significantly higher throughput by invoking the deep model *only when needed*.
 
-<video src="demo.webm" controls loop muted playsinline width="320">
-  Your browser does not support the video tag.
-</video>
+![CGF Demo](demo.gif)
 
 > Green overlays = traditional detection (high confidence).  
 > Red overlays = RITNet fallback triggered by low confidence.  
